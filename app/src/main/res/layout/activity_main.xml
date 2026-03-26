@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+    
+    <net.skyscanner.backpack.card.BpkCardView
+        android:id="@+id/flightCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerStyle="large"
+        android:layout_marginTop="32dp">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+            
+            <net.skyscanner.backpack.text.BpkText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flight BA1427"
+                style="@style/bpkTextHeading1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"/>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginVertical="16dp"/>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    
+                    <net.skyscanner.backpack.text.BpkText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Departure"
+                        style="@style/bpkTextHeading4"
+                        android:textColor="#666666"/>
+                    
+                    <net.skyscanner.backpack.text.BpkText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LHR"
+                        style="@style/bpkTextHeading2"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#007AFF"/>
+                    
+                    <net.skyscanner.backpack.text.BpkText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14:30"
+                        style="@style/bpkTextBodyDefault"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+                
+                <net.skyscanner.backpack.text.BpkText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="→"
+                    style="@style/bpkTextHeading1"
+                    android:layout_gravity="center"
+                    android:textColor="#999999"/>
+                
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    
+                    <net.skyscanner.backpack.text.BpkText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arrival"
+                        style="@style/bpkTextHeading4"
+                        android:textColor="#666666"/>
+                    
+                    <net.skyscanner.backpack.text.BpkText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JFK"
+                        style="@style/bpkTextHeading2"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#007AFF"/>
+                    
+                    <net.skyscanner.backpack.text.BpkText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17:45"
+                        style="@style/bpkTextBodyDefault"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </net.skyscanner.backpack.card.BpkCardView>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
